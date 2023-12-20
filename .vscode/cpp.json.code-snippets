@@ -1,0 +1,70 @@
+{
+	// Place your C++ workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"A CP snippet": {
+		"prefix": "cpsnip",
+		"body": [
+		  "#include <bits/stdc++.h>",
+		  "using namespace std;",
+		  "#define gc getchar_unlocked",
+		  "#define fo(i, n) for (i = 0; i < n; i++)",
+		  "#define Fo(i, k, n) for (i = k; k < n ? i < n : i > n; k < n ? i += 1 : i -= 1)",
+		  "#define ll long long",
+		  "#define deb(x) cout << #x << \"=\" << x << endl",
+		  "#define pb push_back",
+		  "#define mp make_pair",
+		  "#define F first",
+		  "#define S second",
+		  "#define all(x) x.begin(), x.end()",
+		  "#define clr(x) memset(x, false, sizeof(x))",
+		  "#define sortall(x) sort(all(x))",
+		  "#define tr(it, a) for (auto it = a.begin(); it != a.end(); it++)",
+		  "#define PI 3.1415926535897932384626",
+		  "#define mod 1000000007",
+		  "typedef pair<int, int> pii;",
+		  "typedef pair<ll, ll> pl;",
+		  "typedef vector<int> vi;",
+		  "typedef vector<ll> vl;",
+		  "typedef vector<pii> vpii;",
+		  "typedef vector<pl> vpl;",
+		  "typedef vector<vi> vvi;",
+		  "typedef vector<vl> vvl;",
+		  "int main()",
+		  "{",
+		  "#ifndef ONLINE_JUDGE",
+		  "    freopen(\"input.txt\", \"r\", stdin);",
+		  "    freopen(\"output.txt\", \"w\", stdout);",
+		  "#endif",
+		  "    ios_base::sync_with_stdio(0);",
+		  "    cin.tie(0);",
+		  "    cout.tie(0);",
+		  "    int t;",
+		  "	   int n,x,y,a,b;",
+		  "    cin >> t;",
+		  "    while (t--)",
+		  "    {",
+		  "        //write code here",
+		  "    }",
+		  "    return 0;",
+		  "}",
+		  "/** মৃতরা কি ব্যাথা পায় ? যখন দেহ মাটিতে খায় ! **/",
+		  "/**LaZyBadB0y **/"
+		],
+		"description": "A CP snippet"
+	  }
+}
