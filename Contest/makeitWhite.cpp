@@ -23,35 +23,6 @@ typedef vector<pii> vpii;
 typedef vector<pl> vpl;
 typedef vector<vi> vvi;
 typedef vector<vl> vvl;
-
-// building BST in cpp
-struct Node
-{
-    int data;
-    struct Node *left;
-    struct Node *right;
-
-    Node(int val)
-    {
-        data=val;
-        left= right =NULL;
-
-    }
-    
-};
-
-void preorder(Node *node )
-{
-    if(node==NULL)
-    {
-        return ;
-    }
-    cout<<(node->data)<<endl;
-    preorder(node->left);
-    preorder(node->right);
-}
-
-
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -61,18 +32,30 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-   
-
-   Node *root=new Node(1);
-   root->left = new Node(2);
-   root -> right = new Node(3);
-
-   root ->left ->right=new Node(5);
-
-   preorder( root);
-   
-
-
+    int t,n,x,y,a,b;
+    cin >> t;
+    while (t--)
+    {
+        x=-1,y=-1;
+        cin>>n;
+        char s[n+2];
+        for(int i =0;i<n;i++)
+        {
+            cin>>s[i];
+            if(s[i]=='B')
+            {
+                if(x==-1 && y==-1)
+                {
+                    x=i;
+                    y=i;
+                }
+                else {
+                    y=i;
+                }
+            }
+        }
+        cout<<max((y-x+1),0)<<endl;
+    }
     return 0;
 }
 /** মৃতরা কি ব্যাথা পায় ? যখন দেহ মাটিতে খায় ! **/
