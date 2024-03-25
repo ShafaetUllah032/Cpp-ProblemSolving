@@ -1,1 +1,8 @@
+120
+swap done 
+swap done 
+5
+4
+3
+2
 1
