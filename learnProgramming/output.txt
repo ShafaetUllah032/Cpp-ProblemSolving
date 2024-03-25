@@ -1,8 +1,1 @@
-120
-swap done 
-swap done 
-5
-4
-3
-2
-1
+After insertion Sort : 2 3 5 10 17 
